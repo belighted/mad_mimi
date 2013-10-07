@@ -29,7 +29,7 @@ module MadMimi #:nodoc
     #
     # See {Get Audience Members}[http://madmimi.com/developer/lists]
     def members(options = {})
-      response = get('/audience_members')
+      response = get('/audience_members', options)
       response ? response["audience"]["member"] : response
     end
 
